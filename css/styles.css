@@ -70,3 +70,11 @@ li.nav-item > a {
     text-decoration: none;
     color: inherit;
 }
+
+li.nav-item > a.selected {
+    color: #8E8A8D;
+}
+
+.selected {
+    font-size: 21px;
+}
