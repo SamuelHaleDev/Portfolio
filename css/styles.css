@@ -1,0 +1,27 @@
+.navbar-items {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.placeholder {
+    flex: 2;
+}
+
+.nav-item, .resume-button {
+    margin-left: 10px;
+}
+
+.list-num {
+    display: inline-block;
+    color: #E85A4F;
+}
+
+.logo {
+    color: #E85A4F;
+}
+
+.resume-button {
+    color: #E85A4F;
+}
