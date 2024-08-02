@@ -5,80 +5,17 @@
         <meta charset="UTF-8">
         <title>Sam's SWE Portfolio</title>
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     </head>
 
     <body>
         <!--Navigation Bar-->
-        <div id="nav-placeholder">
-
-        </div>
-        <script>
-            function selectNavItem(event) {
-                console.log("selectNavItem called"); // Debugging log
-                
-                // Check if event.currentTarget is not null
-                if (event.currentTarget) {
-                    console.log("Current Target: ", event.currentTarget); // Debugging log
-                    // Remove 'selected' class from previously selected item
-                    let removeSelected = document.querySelector(".selected");
-                    if (removeSelected) {
-                        removeSelected.classList.remove('selected');
-                    }
-    
-                    // Add 'selected' class to the current item
-                    event.currentTarget.classList.add('selected');
-
-                    // Save the selected item in local storage
-                    localStorage.setItem('selectedNavItem', event.currentTarget.href);
-                } else {
-                    console.error("Event currentTarget is null"); // Error log
-                }
-            }
-    
-            document.addEventListener('DOMContentLoaded', function() {
-            console.log("DOM fully loaded and parsed"); // Debugging log
-
-            // Using XMLHttpRequest to load nav.html
-            const xhr = new XMLHttpRequest();
-            xhr.open('GET', 'nav.html', true);
-            xhr.onload = function() {
-                if (xhr.status >= 200 && xhr.status < 300) {
-                    document.getElementById('nav-placeholder').innerHTML = xhr.responseText;
-                    console.log("nav.html loaded successfully"); // Debugging log
-
-                    const navItems = document.querySelectorAll('.nav-item a');
-                    console.log("Nav items found: ", navItems.length); // Debugging log
-
-                    // Retrieve and apply the selected item from local storage
-                    const selectedNavItem = localStorage.getItem('selectedNavItem');
-                    navItems.forEach(navItem => {
-                        navItem.addEventListener('click', function(event) {
-                            event.preventDefault(); // Prevent the default anchor behavior
-
-                            console.log("Clicked anchor tag href: ", event.target.href); // Debugging log
-
-                            selectNavItem(event);
-
-                            // Redirect to the selected page
-                            window.location.href = event.target.href;
-                        });
-
-                        if (navItem.href === selectedNavItem) {
-                            navItem.classList.add('selected');
-                        }
-                    });
-                    console.log("Event listener attached"); // Debugging log
-                } else {
-                    console.log("Error loading nav.html: ", xhr.status, xhr.statusText); // Error handling log
-                }
-            };
-            xhr.onerror = function() {
-                console.log("Network error while loading nav.html"); // Error handling log
-            };
-            xhr.send();
-        });
-        </script>
+        <div id="nav-placeholder"></div>
+        <script src="script.js"></script>
         <!--end of Navigation Bar-->
+        <p>About</p>
     </body>
 </html>
