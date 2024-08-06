@@ -202,6 +202,7 @@ p.paragraph {
 }
 
 /* WORK EXPERIENCE STYLING */
+
 li.experience-item {
     width: 50%;
 }
@@ -264,4 +265,28 @@ li.tech-item {
     margin: 10px 0 0 5px;
     background-color: rgba(232, 90, 79, 0.25);
     border-radius: 20px;
+}
+
+div.resume-link-container {
+    display: block;
+    text-align: center;
+}
+
+h3.resume-link-text {
+    color: #E98074;
+    font-family: monospace;
+}
+
+h3.resume-link-text > a {
+    text-decoration: none;
+    color: #b3a780;
+}
+
+h3.resume-link-text > a:hover {
+    color: #E98074;
+}
+
+h3.resume-link-text > a:hover > span.arrow {
+    margin-left: 10px;
+    transition: margin-left 400ms ease-in-out;
 }
