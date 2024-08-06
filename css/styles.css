@@ -198,3 +198,25 @@ p.paragraph {
 }
 
 /* WORK EXPERIENCE STYLING */
+a.experience-group {
+    display: flex;
+    text-decoration: none;
+}
+
+h3.title_company {
+    margin: 0px;
+}
+
+div.experience-content {
+    width: 75%;
+    margin-left: 20px;
+}
+
+p.job-content {
+    margin: 0px;
+}
+
+ul.tech-stack {
+    list-style: none;
+    display: flex;
+}
