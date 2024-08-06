@@ -178,6 +178,10 @@ div.nav-container > p {
 }
 
 /* ABOUT PAGE STYLING */
+ol.experience-list {
+    list-style: none;
+}
+
 div.about-body {
     width: 500px;
     margin: auto;
@@ -198,13 +202,42 @@ p.paragraph {
 }
 
 /* WORK EXPERIENCE STYLING */
+li.experience-item {
+    width: 50%;
+}
+
+div.experience-group {
+    padding: 20px;
+}
+
 a.experience-group {
     display: flex;
     text-decoration: none;
+    padding: 20px;
+}
+a.experience-group:hover {
+    background-color: #d9d3bf;
+    outline: solid;
+    outline-color: #d9d3bf;
+    border-radius: 5px;
+}
+
+a.experience-group:hover > div.experience-content > h3.title_company {
+    color: #E98074;
+}
+
+div.experience-time_frame {
+    color: #8E8D8A;
 }
 
 h3.title_company {
     margin: 0px;
+    color: #b3a780;
+}
+
+a.experience-group:hover > div.experience-content > h3.title_company > span.arrow {
+    margin-left: 10px;
+    transition: margin-left 400ms ease-in-out;
 }
 
 div.experience-content {
@@ -214,9 +247,21 @@ div.experience-content {
 
 p.job-content {
     margin: 0px;
+    color: #b4b4b1;
 }
 
 ul.tech-stack {
     list-style: none;
     display: flex;
+    width:100%;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+li.tech-item {
+    color: #E98074;
+    padding: 10px;
+    margin: 10px 0 0 5px;
+    background-color: rgba(232, 90, 79, 0.25);
+    border-radius: 20px;
 }
