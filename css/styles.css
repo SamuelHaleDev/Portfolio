@@ -61,10 +61,13 @@ li {
     margin: auto;
     background: none;
     font-weight: 700;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .resume-button:hover {
-    background: #D8C3A5;
+    outline: none;
+    box-shadow: 3px 3px 0 0 #E85A4F;
+    transform: translate(-4px, -4px);
     cursor: pointer;
 }
 
