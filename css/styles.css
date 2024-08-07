@@ -336,3 +336,146 @@ h3.resume-link-text > a:hover > span.arrow {
     margin-left: 10px;
     transition: margin-left 400ms ease-in-out;
 }
+
+/* PROJECT PAGE STYLING */
+div.projects-container {
+    max-width: 1000px;
+    padding: 100px 0px;
+    margin: 0px auto;
+}
+
+ul.content-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li.project-item {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+div.project-text-container {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+    grid-column: 7 / -1;
+    text-align: right;;
+}
+
+div.img-container {
+    grid-column: 1 / 8;
+    grid-area: 1 / 2 / -1 / -1;
+    position: relative;
+    z-index: 1;
+}
+
+div.img-container > a {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+div.img-container > a > img {
+    margin: 0px;
+    max-width: none;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+div.project-text-container {
+    grid-column: 7 / -1 ;
+}
+
+p.featured-project {
+    text-align: right;
+    font-family: monospace;
+    color: #E85A4F;
+    margin: 10px;
+}
+
+h3.project-title {
+    text-align: right;
+    margin: 0px 0px 10px;
+}
+
+h3.project-title > a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+h3.project-title > a:hover {
+    color: #E85A4F;
+    transition: color 200ms ease-in-out;
+}
+
+div.description-container {
+    padding: 25px;
+    background-color: #cfc8af;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+p.description-text {
+    margin: 0px;
+    text-align: right;
+    color: #757570;
+}
+
+ul.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+
+li.technology-item {
+    color: #757570;
+}
+
+div.project-links-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    -webkit-box-pack: right;
+    justify-content: flex-end;
+}
+
+div.project-links-container > a {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    visibility: visible;
+}
+
+div.project-links-container > a > svg {
+    width: 20px;
+    height: 20px;
+}
+
+div.project-links-container > a:hover {
+    color: #E85A4F;
+    transition: color 200ms ease-in-out;
+}
