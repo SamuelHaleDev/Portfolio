@@ -245,6 +245,9 @@ p.paragraph {
 }
 
 /* WORK EXPERIENCE STYLING */
+li.experience-item > h2.section-heading {
+    padding-left: 40px;
+}
 
 li.experience-item {
     width: 50%;
