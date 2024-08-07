@@ -88,6 +88,10 @@ li.nav-item > a {
     color: inherit;
 }
 
+a.link:hover {
+    color: #E85A4F;
+}
+
 li.nav-item > a.selected {
     color: #E85A4F;
 }
@@ -186,8 +190,44 @@ ol.experience-list {
 }
 
 div.about-body {
-    width: 500px;
+    width: 50%;
     margin: auto;
+}
+
+h2.section-heading {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 26px;
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 > span.numbering {
+    position: relative;
+    margin-right: 10px;
+    font-size: 22px
+    font-weight: 400;
+    color: #E85A4F;
+    font-family: monospace;
+}
+
+h2.section-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: black;
+}
+
+div.inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
 
 img.self-portrait {
