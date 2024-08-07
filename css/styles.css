@@ -209,7 +209,7 @@ h2.section-heading {
 h2 > span.numbering {
     position: relative;
     margin-right: 10px;
-    font-size: 22px
+    font-size: 22px;
     font-weight: 400;
     color: #E85A4F;
     font-family: monospace;
