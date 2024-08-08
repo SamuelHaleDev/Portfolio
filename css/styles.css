@@ -357,13 +357,14 @@ li.project-item {
     grid-template-columns: repeat(12, 1fr);
     -webkit-box-align: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 div.project-text-container {
     position: relative;
     grid-area: 1 / 1 / -1 / 7;
     grid-column: 7 / -1;
-    text-align: right;;
+    text-align: right;
 }
 
 div.img-container {
@@ -371,6 +372,15 @@ div.img-container {
     grid-area: 1 / 2 / -1 / -1;
     position: relative;
     z-index: 1;
+}
+
+div.img-container.right {
+    grid-column: 7 / -1;
+}
+
+div.project-text-container.left {
+    grid-column: 1 / 8;
+    text-align: left;
 }
 
 div.img-container > a {
@@ -386,6 +396,12 @@ div.img-container > a > img {
     max-width: none;
     padding: 0px;
     vertical-align: middle;
+    border-radius: 5px;
+}
+
+div.img-container > a > img:hover {
+    opacity: 0.75;
+    transition: opacity 200ms ease-in-out;
 }
 
 div.project-text-container {
@@ -396,7 +412,7 @@ p.featured-project {
     text-align: right;
     font-family: monospace;
     color: #E85A4F;
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 h3.project-title {
@@ -430,6 +446,10 @@ p.description-text {
     color: #757570;
 }
 
+p.description-text.left {
+    text-align: left;
+}
+
 ul.technology-list {
     display: flex;
     flex-wrap: wrap;
@@ -440,8 +460,17 @@ ul.technology-list {
     z-index: 2;
 }
 
+ul.technology-list.right {
+    justify-content: flex-end;
+}
+
 li.technology-item {
     color: #757570;
+    margin: 0px 0px 0px 10px;
+}
+
+li.technology-item.left {
+    margin: 0px 10px 0px 0px;
 }
 
 div.project-links-container {
@@ -461,13 +490,17 @@ div.project-links-container > a {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     position: relative;
     z-index: 1;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
     visibility: visible;
+}
+
+div.project-links-container > a.left {
+    padding: 10px 10px 10px 0px;
 }
 
 div.project-links-container > a > svg {
@@ -479,3 +512,46 @@ div.project-links-container > a:hover {
     color: #E85A4F;
     transition: color 200ms ease-in-out;
 }
+
+p.featured-project.left {
+    text-align: left;
+}
+
+h3.project-title.left {
+    text-align: left;
+}
+
+div.project-links-container.left {
+    justify-content: flex-start;
+}
+
+a.client {
+    text-decoration: none;
+    color: #E85A4F;
+}
+
+a.client:hover {
+    text-decoration: none;
+}
+
+span.underline {
+    background-image: linear-gradient(#E85A4F 0 0);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    -webkit-animation: slide_underline_out 200ms linear forwards;
+}
+
+span.underline:hover {
+    -webkit-animation: slide_underline_in 200ms linear forwards;
+}
+
+@-webkit-keyframes slide_underline_in {
+    from { background-size: 0% 1px; }
+    to { background-size: 100% 1px; }
+}
+
+@-webkit-keyframes slide_underline_out {
+    from { background-size: 100% 1px; }
+    to { background-size: 0% 1px; }
+}
+
