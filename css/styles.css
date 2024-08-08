@@ -8,6 +8,10 @@
     src: url('Roboto-Bold.ttf') formt('ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EAE7DC;
     min-height: 100vh;
