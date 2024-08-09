@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     listItems.forEach(item => {
         item.addEventListener("mouseover", () => {
             listItems.forEach(sibling => {
-                if (sibling !== item && sibling.classList.contains("experience-item")) {
+                if (sibling !== item && sibling.classList.contains("experience-item") && !sibling.classList.contains("work")) {
                     sibling.style.opacity = "0.5";
                     sibling.style.transition = "opacity 100ms ease-in-out";
                 }

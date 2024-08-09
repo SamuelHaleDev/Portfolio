@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sam's SWE Portfolio</title>
+    <title>Samuel Hale</title>
+    <link rel = "icon" href ="./assets/Title-Logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
@@ -11,21 +12,325 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <div id="nav-placeholder"></div>
-    <script src="script.js"></script>
+    <div class="navbar">
+        <ul class="navbar-items">
+            <li class="logo">
+                <a href="index.html"><img src="assets/Logo.png" alt="logo"></a>
+            </li>
+            <li class="placeholder"></li>
+            <li class="nav-item"><a href="#about" class="about link"><div class="list-num">01.</div> About</a></li>
+            <li class="nav-item"><a href="#work" class ="work link"><div class="list-num">02.</div> Work</a></li>
+            <li class="nav-item"><a href="#project" class="projects link"><div class="list-num">03.</div> Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="contact link"><div class="list-num">04.</div> Contact</a></li>
+            <button class="resume-button"><a href="assets/Samuel_Hale_Resume.docx" download>Resume</a></button>
+        </ul>
+    </div>
     <!--end of Navigation Bar-->
+    <!--Social List-->
+    <div orientation="left" class="side left">
+        <ul class="logo-links social">
+            <li class="linkedin">
+                <a href="https://www.linkedin.com/in/samhale07/" target="_blank"><img src="assets/in.png" alt="logo"></a>
+            </li>
+            <li class="spotify">
+                <a href="https://open.spotify.com/user/31hnp6kdgi7qjobbud6f5qgltqty" rel="noopener noreferrer" target="_blank"><img src="assets/spot.png" alt="logo"></a>
+            </li>
+            <li class="github">
+                <a href="https://github.com/SamuelHaleDev" target="_blank"><img src="assets/gh.png" alt="logo"></a>
+            </li>
+        </ul>
+    </div>
+    <!--end of Social List-->
+    <!--Email Footer-->
+    <div orientation="right" class="side right">
+        <div class="email-container">
+            <a href="mailto:samuelhalebusiness@gmail.com" rel="noopener noreferrer" class="email" target="_blank">
+                samuelhalebusiness@gmail.com
+            </a>
+        </div>
+    </div>
+    <!--end of Email Footer-->
     <!--Splash Page-->
-    <div class="splash-content-container">
+    <div class="splash-content-container  main-section">
         <p class="introduction">Hi, my name is</p>
         <h1 class="name">Samuel Hale.</h1>
         <h1 class="self-statement">I create software that solves problems.</h1>
         <p class="self-overview">
             As a Computer Science graduate and Software Engineer, I am currently dedicated to building full stack web applications with diverse technologies <span class="indep"> indepentently</span>.
         </p>
-        
         <button class="resume-button"><a href="https://samuelhalebusiness.wixsite.com/portfolio/blog" target="_blank">Check out my blog!</a></button>
     </div>
     <!--end of Splash Page-->
+    <!--About Content-->
+    <div id="about" class="about-body section">
+        <h2 class="section-heading"><span class="numbering">01.</span> About Me</h2>
+        <div class="inner">
+            <div class="body-paragraphs">
+                <p class="paragraph">
+                    I decided to study Computer and Information Science at the University of Michigan - Dearborn in 2019. Although I didn't know much about computer science at the time, I enjoyed building and working with computers. My high school friend, who took all the same AP classes with me, was studying Data Science to become a Data Analyst. I figured that if all else failed, I could collaborate with my friend and make a decent living.
+                </p>
+                <p class="paragraph">
+                    My first computer science lab involved writing "Hello World" in C++ and creating other simple programs to learn the basics. I enjoyed it because I could make my computer display things using code that I understood. While I didn't agree with or enjoy everything in the college curriculum, I loved programming and dedicated a lot of time to it.
+                </p>
+                <p class="paragraph">
+                    By 2022, I wanted to develop modern, industry-level applications. This desire led me to courses and projects that taught me HTML, CSS, JavaScript, Node, React, and Full Stack Web Development. Since then, I've worked on many school assignments and personal projects.
+                </p>
+                <p class="paragraph">
+                    From 2022 to 2024, I interned as a customer support specialist and software engineer at WoodWing. In 2023, I pushed my first production code and enjoyed learning about custom automations integrated with WoodWing's core applications. We improved many customers' workflow efficiency and resolved productivity issues. During this time, I learned about AWS cloud and hosting tools and how to work with them in Node scripts. I also gained knowledge about webhooks and triggers with Workato, which was a key area I was previously unfamiliar with.            </p>
+                <p class="paragraph">
+                    Today, I'm committed to learning new technologies, improving as an engineer and developer, and building cool things that solve problems I encounter or identify as significant pain points. I love starting new projects because they create new pathways in my brain and solidify my knowledge.            </p>
+                <p class="paragraph">
+                    In my free time, I enjoy playing video games, sports, spending time with my fiancée, friends, or family, and working out. I like a variety of games, but competitive ones like Madden and Counter-Strike usually capture my attention. When I can't play basketball at the park, these games fulfill my competitive spirit. I also enjoy music from any genre with flowing melodies and well-integrated vocals.
+                </p>
+            </div>
+            <div class="portrait">
+                <img src="assets/BusinessPhoto.jpg" class="self-portrait">
+            </div>
+        </div>
+    </div>
+    <!--end of About Content-->
+    <!--Work Conent-->
+    <div id="work" class="experience-container section">
+        <ol class="experience-list">
+            <li class="experience-item work">
+                <h2 class="section-heading"><span class="numbering">02.</span> Where I've Worked</h2>
+            </li>
+            <li class="experience-item">
+                <div class="experience-group">
+                    <a href="https://www.woodwing.com/" class="experience-group" target="_blank">
+                        <div class="experience-time_frame">
+                            2023 — 2024
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="title_company">
+                                Software Engineer Intern · WoodWing <span class="arrow">-></span>
+                            </h3>
+                            <p class="job-content">
+                                Build and maintain custom software projects for clients that integrate with WoodWing's core applications.
+                                Work closely with cross functional teams including CloudOps, Support and Sales to incept and maintain custom integrations.
+                                Clients include Editora Moderna, Hearst, Editora Saber, Abrams Books.
+                            </p>
+                            <ul class="tech-stack">
+                                <li class="tech-item">
+                                    AWS
+                                </li>
+                                <li class="tech-item">
+                                    JavaScript
+                                </li>
+                                <li class="tech-item">
+                                    Node.JS
+                                </li>
+                                <li class="tech-item">
+                                    Workato
+                                </li>
+                                <li class="tech-item">
+                                    HTML
+                                </li>
+                                <li class="tech-item">
+                                    CSS
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li class="experience-item">
+                <div class="experience-group">
+                    <a href="https://www.woodwing.com/" class="experience-group" target="_blank">
+                        <div class="experience-time_frame">
+                            2022 — 2023
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="title_company">
+                                Customer Support Analyst Intern · WoodWing <span class="arrow">-></span>
+                            </h3>
+                            <p class="job-content">
+                                Provide technical and administrational support to our end-users and partners.
+                                Follow common AGILE support practices attempting support at reports and handing off to developer support via Jira.
+                            </p>
+                            <ul class="tech-stack">
+                                <li class="tech-item">
+                                    Okta
+                                </li>
+                                <li class="tech-item">
+                                    JumpCloud
+                                </li>
+                                <li class="tech-item">
+                                    Jira
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ol>
+        <script src="opacity.js"></script>
+        <div class="resume-link-container">
+            <h3 class="resume-link-text">
+                <a href="./assets/Samuel_Hale_SE_Resume.pdf" target="_blank">
+                    View Full Résumé <span class="arrow">-></span>
+                </a>
+            </h3>
+        </div>
+    </div>
+    <!--end of Work Content-->
+    <!--Project Content-->
+    <div id="project" class="projects-container section">
+        <h2 class="section-heading"><span class="numbering">03.</span> Some Things I've Built</h2>
+        <ul class="content-list">
+            <li class="project-item">
+                <div class="img-container">
+                    <a href="https://playpal-jwmk.onrender.com/" target="_blank">
+                        <img src="./assets/playpal.png">
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <p class="featured-project">Featured Project</p>
+                    <h3 class="project-title"><a href="https://playpal-jwmk.onrender.com/" target="_blank">PlayPal AI</a></h3>
+                    <div class="description-container">
+                        <p class="description-text">A video game recommendation app running off of IGDB API pulled data. Supports metadata filtering and machine learning content recommendation from user interaction.</p>
+                    </div>
+                    <div class="technology-list-container">
+                        <ul class="technology-list right">
+                            <li class="technology-item">VS Code</li>
+                            <li class="technology-item">React.js</li>
+                            <li class="technology-item">Flask</li>
+                            <li class="technology-item">PostgreSQL</li>
+                            <li class="technology-item">SKLearn</li>
+                            <li class="technology-item">IGDB API</li>
+                        </ul>
+                    </div>
+                    <div class="project-links-container">
+                        <a href="https://github.com/ww-samuel-hale/playpal" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                <title>
+                                    GitHub
+                                </title>
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://playpal-jwmk.onrender.com/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                <title>
+                                    External Link
+                                </title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="project-text-container left">
+                    <p class="featured-project left">Featured Project</p>
+                    <h3 class="project-title left"><a href="https://github.com/SamuelHaleDev/Chat-Application" target="_blank">WhatsChat</a></h3>
+                    <div class="description-container">
+                        <p class="description-text left">A real-time messaging service inspired by the WhatsApp approach. Supports chat room creation, multi-user chat room flow and real time < 1 second messaging.</p>
+                    </div>
+                    <div class="technology-list-container">
+                        <ul class="technology-list">
+                            <li class="technology-item left">Java</li>
+                            <li class="technology-item left">JSwing</li>
+                            <li class="technology-item left">JUnit</li>
+                            <li class="technology-item left">IntelliJ IDEA</li>
+                        </ul>
+                    </div>
+                    <div class="project-links-container left">
+                        <a href="https://github.com/SamuelHaleDev/Chat-Application" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                <title>
+                                    GitHub
+                                </title>
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/SamuelHaleDev/Chat-Application" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank" class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                <title>
+                                    External Link
+                                </title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="img-container right">
+                    <a href="https://github.com/SamuelHaleDev/Chat-Application" target="_blank">
+                        <img src="./assets/Discover.png">
+                    </a>
+                </div>
+            </li>
+            <li class="project-item">
+                <div class="img-container">
+                    <a href="https://storai.net/" target="_blank">
+                        <img src="./assets/storai.png">
+                    </a>
+                </div>
+                <div class="project-text-container">
+                    <p class="featured-project">Featured Project</p>
+                    <h3 class="project-title"><a href="https://storai.net/" target="_blank">StorAI</a></h3>
+                    <div class="description-container">
+                        <p class="description-text">A web course that teaches the steps to finding the right industry and becoming a great entreprenuer. Teaches everything 
+                            from how to identify an industry based on your personality type, to negotiation and everything in between. Built for <a href="https://sites.google.com/a/umich.edu/mike-callahan/" target="_blank" class="client"><span class="underline">Callahan & Rose Consulting</span></a>
+                        </p>
+                    </div>
+                    <div class="technology-list-container">
+                        <ul class="technology-list right">
+                            <li class="technology-item">VS Code</li>
+                            <li class="technology-item">React.js</li>
+                            <li class="technology-item">Node.js</li>
+                            <li class="technology-item">PostgreSQL</li>
+                            <li class="technology-item">npm</li>
+                        </ul>
+                    </div>
+                    <div class="project-links-container">
+                        <a href="https://storai.net/" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                <title>
+                                    GitHub
+                                </title>
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://storai.net/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                                <title>
+                                    External Link
+                                </title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--end of Project Content-->
+    <!--Contact Content-->
+    <div id="contact" class="contact-container section">
+        <h2 class="contact"><span class="numbering">04.</span> What's Next?</h2>
+        <h1 class="title">Get In Touch</h1>
+        <p class="contact">I am open for full time contract, or salaried work. If you have a question regarding my background
+            or just want to say hi, you can reach out via text or email.
+        </p>
+        <div class="button-container">
+            <button class="resume-button email">
+                <a href="mailto:samuelhalebusiness@gmail.com" rel="noopener noreferrer" target="_blank">
+                    Say Hello!
+                </a>
+            </button>
+        </div>
+    </div>
+    <!--end of Contact Content-->
     <!--Footer-->
     <div id="footer-placeholder"></div>
     <script>
