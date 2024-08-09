@@ -176,7 +176,6 @@ span.indep {
 /* FOOTER STYLING */
 .nav-container {
     margin: auto;
-    min-height: 100px;
 }
 
 ul.logo-links {
@@ -192,13 +191,18 @@ p.claim {
 }
 
 li > a > img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+li > a > img:hover {
+    opacity: 75%;
+    transition: opacity 200ms ease-in-out;
 }
 
 div.nav-container > p {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     font-style: normal;
     color: #0d0c0d;
 }
@@ -572,5 +576,97 @@ span.underline:hover {
 @-webkit-keyframes slide_underline_out {
     from { background-size: 100% 1px; }
     to { background-size: 0% 1px; }
+}
+
+/* Contact Section Styling */
+div.contact-container {
+    margin: auto;
+}
+
+h2.contact {
+    text-align: center;
+    font-family: monospace;
+    font-size: 22px;
+    margin: 0px;
+}
+
+h1.title {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    margin: 10px 0px 20px 0px;
+}
+
+p.contact {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0px auto;
+    width: 500px;
+}
+
+div.button-container {
+    display: flex;
+    margin: auto;
+}
+
+button.resume-button.email {
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* LEFT FOOTER STYLING */
+div.side.left {
+    position: fixed;
+    bottom: 0px;
+}
+
+div.side.right {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+}
+
+div.side.right::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 1px;
+    height: 150px;
+    margin: auto;
+    background-color: black;
+}
+
+div.side.left::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 1px;
+    height: 150px;
+    margin: auto;
+    background-color: black;
+}
+
+ul.logo-links.social {
+    display: block;
+}
+
+div.email-container {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+a.email {
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    margin: auto;
+}
+
+div.email-container > a:hover {
+    color:#E85A4F;
+    transition: color 200ms ease-in-out;
 }
 
